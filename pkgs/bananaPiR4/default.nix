@@ -69,7 +69,7 @@
 
 
   linuxPackages_frankw_6_12_bananaPiR4 = linuxKernel.packagesFor (linux_6_12.override {
-    autoModules = false;
+    autoModules = true;
 
     structuredExtraConfig = with lib.kernel; {
       BTRFS_FS = module;
