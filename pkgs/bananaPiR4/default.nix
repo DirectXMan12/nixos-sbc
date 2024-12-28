@@ -89,16 +89,6 @@
       DRM = lib.mkForce no;
       SOUND = no;
       INFINIBAND = lib.mkForce no;
-
-			MEDIA_SUPPORT = no;
-			BT = no; # no need for bluetooth on a router?
-			CAN = no; # not in a car
-			NFC = no; # no need for nfc scanning on a router
-			PCI_HYPERV_INTERFACE = no; # we're not in a hyperv vm
-			PCCARD = no; # no pcmcia cards
-			GNSS = no; # no gps
-			CXL = no; # no weird ibm thing
-			IIO = no; # no need for industrial io sensors
     };
 
     argsOverride = {
